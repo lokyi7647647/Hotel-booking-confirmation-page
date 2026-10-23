@@ -1,0 +1,59 @@
+.line-separator {
+  width: 229px;
+  height: 7px;
+  background-image:
+    linear-gradient(to right, hsl(40, 60%, 98%) 96%, transparent 96%),
+    linear-gradient(
+      to right,
+      hsla(30, 22%, 93%, 0.671) 96%,
+      transparent 96%,
+      #f7f2ec
+    ),
+    linear-gradient(
+      to right,
+      hsl(0, 0%, 97.8%) 96%,
+      96.2%,
+      transparent,
+      hsl(0, 0%, 100%)
+    ),
+    linear-gradient(
+      to right,
+      hsl(30, 24%, 93%) 96%,
+      96.5%,
+      transparent,
+      #faf5ef 99.5%
+    ),
+    linear-gradient(
+      to right,
+      hsl(0, 0%, 98%) 96%,
+      hsl(0, 0%, 100%) 96%,
+      #f7f2ec
+    ),
+    linear-gradient(
+      to right,
+      hsla(30, 22%, 93%, 0.473) 96%,
+      hsl(30, 24%, 93%) 96%,
+      #fef9f3
+    ),
+    linear-gradient(to right, hsl(36, 22%, 86%) 98.5%, #faf5ef);
+
+  background-size:
+    auto 1px,
+    auto 1px,
+    auto 1px,
+    auto 1px,
+    auto 1px,
+    auto 1px,
+    auto 1px;
+  background-repeat: no-repeat;
+  background-position:
+    0 0,
+    0 1px,
+    0 2px,
+    0 3px,
+    0 4px,
+    0 5px,
+    0 6px;
+  margin-top: 6px;
+  margin-left: 8px;
+}

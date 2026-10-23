@@ -1,0 +1,10 @@
+body {
+  background-color: hsl(35, 60%, 96%);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: DM Sans;
+  position: relative;
+}

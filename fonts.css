@@ -1,0 +1,28 @@
+@font-face {
+  font-family: DM Mono;
+  src: url(DMMono-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: DM Mono;
+  src: url(DMMono-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: DM Sans;
+  src: url(DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+  font-family: Fraunces;
+  src: url(Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Fraunces;
+  src: url(Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+  font-style: italic;
+}

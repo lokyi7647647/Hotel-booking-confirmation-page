@@ -1,125 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <title>Frontend Mentor | Hotel booking confirmation page</title>
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="components/site-branding.css" />
+    <link rel="stylesheet" href="components/multi-layered-lines.css" />
+    <link rel="stylesheet" href="utilities.css" />
+    <link rel="stylesheet" href="components/navbar.css" />
+    <link rel="stylesheet" href="base.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Hotel booking confirmation page</title>
+  </head>
+  <body>
+    <div id="sidebar">
+      <!-- Sidebar starts -->
+      <div class="display-flex">
+        <img
+          id="sun-logo"
+          class="position-relative"
+          src="assets/images/illustration-sun.svg"
+          alt="sun"
+        />
+        <span class="sun-logo-title display-flex">
+          <span class="font-style-italic color-terracotta-600">Maison</span>
+          <span class="position-relative"> Soleil</span>
+        </span>
+      </div>
 
-  <!-- Sidebar starts -->
+      <div class="line-separator"></div>
+      <!-- Guest navigation -->
+      <nav>
+        <ul id="list-of-nav-links" class="display-flex flex-direction-column">
+          <li class="active-link">
+            <a
+              href="#"
+              aria-current="page"
+              class="display-flex nav-link-container-pos"
+              ><img src="assets/images/icon-bed.svg" alt="bed" />
+              <span class="nav-link-desc display-flex"
+                ><span class="color-charcoal-gray">Your stay</span>
+                <span id="unread-message" class="position-relative"
+                  ><span class="position-absolute">1</span></span
+                >
+              </span></a
+            >
+          </li>
 
-  Maison Soleil
+          <li>
+            <a href="#" class="display-flex nav-link-container-pos"
+              ><img src="assets/images/icon-house.svg" alt="house" />
+              <span class="nav-link-desc">The house</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="display-flex nav-link-container-pos"
+              ><img src="assets/images/icon-pin.svg" alt="pin" />
+              <span class="nav-link-desc">Around town</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="display-flex nav-link-container-pos"
+              ><img
+                src="assets/images/icon-breakfast-outline.svg"
+                alt="dish"
+              /><span class="nav-link-desc">Breakfast</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="display-flex nav-link-container-pos"
+              ><img src="assets/images/icon-mail.svg" alt="mail" />
+              <span class="nav-link-desc">Messages</span></a
+            >
+          </li>
+        </ul>
+      </nav>
 
-  <!-- Guest navigation -->
-  Your stay
-  1
-  The house
-  Around town
-  Breakfast
-  Messages
+      <!-- Local weather -->
+      <article>
+        Today in Cassis 27° Sunny · light breeze Est. 1987 Maison Soleil · 12
+        Rue des Oliviers · Cassis © 2026 Maison Soleil
+      </article>
+    </div>
 
-  <!-- Local weather -->
-  Today in Cassis
-  27°
-  Sunny · light breeze
+    <!-- Sidebar ends -->
 
-  Est. 1987
-  Maison Soleil · 12 Rue des Oliviers · Cassis
-  © 2026 Maison Soleil
+    <!-- Main content starts -->
 
-  <!-- Sidebar ends -->
+    <!-- Booking · Confirmed Bienvenue, Lucia. Print receipt Add to calendar -->
 
-  <!-- Main content starts -->
+    <!-- Booking cards start -->
 
-  Booking · Confirmed
-  Bienvenue, Lucia.
+    <!-- Receipt card -->
+    <!-- Receipt № MS-2026 0421-AH Your stay Check in 25 Apr Saturday · 15:00 Check
+    out 29 Apr Wednesday · 11:00 Room · La Garrigue · 4 nights € 620.00
+    Breakfast · 2 guests € 96.00 Tourist tax € 14.40 Total paid € 730.40 Paid ·
+    Wise · GBP -->
+    <!-- Barcode image -->
 
-  Print receipt
-  Add to calendar
+    <!-- Note from host card -->
+    <!-- Welcome A note from your host, Margaux. We're so glad you're coming. The
+    shutters will be open, the lemonade cold, and the cat - Poivre - pretending
+    not to notice you. Room La Garrigue -->
 
-  <!-- Booking cards start -->
+    <!-- Booking cards end -->
 
-  <!-- Receipt card -->
-  Receipt
-  № MS-2026
-  0421-AH
+    <!-- Guest info row starts -->
 
-  Your stay
+    <!-- Arrival -->
+    <!-- Arrival 01 Check-in from 15:00 Sat, 25 April Ring the brass bell by the blue
+    door. If we're at the market, the key is in the terracotta pot by the olive
+    tree. -->
 
-  Check in
-  25 Apr
-  Saturday · 15:00
+    <!-- Wifi -->
+    <!-- Wifi 02 Le Soleil · Guest Password below Network Le Soleil · Guest Password
+    soleil-2026 Copy -->
 
-  Check out
-  29 Apr
-  Wednesday · 11:00
+    <!-- Breakfast -->
+    <!-- Breakfast 03 Served 8 - 10:30 On the terrace Fresh figs, Marseille honey,
+    pain au levain, and espresso. Gluten-free option? Leave a note the night
+    before. -->
 
-  Room · La Garrigue · 4 nights
-  € 620.00
-  Breakfast · 2 guests
-  € 96.00
-  Tourist tax
-  € 14.40
+    <!-- Guest info row ends -->
 
-  Total paid
-  € 730.40
-
-  Paid · Wise · GBP
-  <!-- Barcode image -->
-
-  <!-- Note from host card -->
-  Welcome
-  A note from your host, Margaux.
-  We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
-  Room
-  La Garrigue
-
-  <!-- Booking cards end -->
-
-  <!-- Guest info row starts -->
-
-  <!-- Arrival -->
-  Arrival
-  01
-  Check-in from 15:00
-  Sat, 25 April
-  Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
-
-  <!-- Wifi -->
-  Wifi
-  02
-  Le Soleil · Guest
-  Password below
-  Network
-  Le Soleil · Guest
-  Password
-  soleil-2026
-  Copy
-
-  <!-- Breakfast -->
-  Breakfast
-  03
-  Served 8 - 10:30
-  On the terrace
-  Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
-
-  <!-- Guest info row ends -->
-
-  <!-- Main content ends -->
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+    <!-- Main content ends -->
+  </body>
 </html>

@@ -1,0 +1,23 @@
+.font-style-italic {
+  font-style: italic;
+}
+
+.color-charcoal-gray {
+  color: hsl(33, 15%, 15%);
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
