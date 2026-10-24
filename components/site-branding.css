@@ -15,10 +15,6 @@
   letter-spacing: -0.3px;
 }
 
-.color-terracotta-600 {
-  color: hsl(15, 74%, 41%);
-}
-
 .sun-logo-title > :last-child {
   color: hsl(33, 15%, 15%);
   font-weight: 600;

@@ -21,3 +21,31 @@
 .position-absolute {
   position: absolute;
 }
+
+.font-dm-mono {
+  font-family: DM Mono;
+}
+
+.font-fraunces {
+  font-family: Fraunces;
+}
+
+.font-dm-sans {
+  font-family: DM Sans;
+}
+
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+
+.color-terracotta-600 {
+  color: hsl(15, 74%, 41%);
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}

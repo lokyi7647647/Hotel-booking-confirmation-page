@@ -1,5 +1,7 @@
 body {
   background-color: hsl(35, 60%, 96%);
+  height: 100vh;
+  margin: 0 0 0 8px;
 }
 
 a {
@@ -7,4 +9,15 @@ a {
   color: black;
   font-family: DM Sans;
   position: relative;
+}
+
+main {
+  flex-grow: 1;
+  padding: 31px 0 0 40px;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
 }

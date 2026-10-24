@@ -19,11 +19,14 @@
     <link rel="stylesheet" href="utilities.css" />
     <link rel="stylesheet" href="components/navbar.css" />
     <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="components/weather-card.css" />
+    <link rel="stylesheet" href="components/side-bar-footer.css" />
+    <link rel="stylesheet" href="components/main-header.css" />
 
     <title>Frontend Mentor | Hotel booking confirmation page</title>
   </head>
-  <body>
-    <div id="sidebar">
+  <body class="display-flex">
+    <aside id="sidebar">
       <!-- Sidebar starts -->
       <div class="display-flex">
         <img
@@ -87,52 +90,82 @@
       </nav>
 
       <!-- Local weather -->
-      <article>
-        Today in Cassis 27° Sunny · light breeze Est. 1987 Maison Soleil · 12
-        Rue des Oliviers · Cassis © 2026 Maison Soleil
+      <article id="weather-card" class="font-dm-mono position-relative">
+        <div id="card-text-container" class="position-absolute">
+          <p id="location">TODAY IN CASSIS</p>
+          <p id="degree" class="font-fraunces">27°</p>
+          <p id="weather-desc" class="font-dm-sans">Sunny · light breeze</p>
+        </div>
       </article>
-    </div>
+
+      <footer id="sidebar-mini-footer" class="position-absolute font-dm-mono">
+        <hr />
+        <p>EST. 1987</p>
+        <p>MAISON SOLEIL · 12 RUE DES</p>
+        <p>OLIVIERS · CASSIS</p>
+        <p>© 2026 MAISON SOLEIL</p>
+      </footer>
+    </aside>
 
     <!-- Sidebar ends -->
-
+    <!-- <div id="big-line-separator"></div> -->
     <!-- Main content starts -->
+    <main class="display-flex flex-direction-column">
+      <header class="display-flex">
+        <div>
+          <h1
+            id="booking-confirmed"
+            class="font-dm-mono text-transform-uppercase font-weight-400"
+          >
+            Booking · Confirmed
+          </h1>
+          <h2 id="booking-person-name" class="font-fraunces font-weight-400">
+            Bienvenue,
+            <span class="font-style-italic color-terracotta-600">Lucia.</span>
+          </h2>
+        </div>
 
-    <!-- Booking · Confirmed Bienvenue, Lucia. Print receipt Add to calendar -->
+        <div id="button-actions" class="display-flex">
+          <button class="font-dm-sans font-weight-600">Print receipt</button>
+          <button class="font-dm-sans">Add to calendar</button>
+        </div>
+      </header>
 
-    <!-- Booking cards start -->
+      <!-- Booking cards start -->
 
-    <!-- Receipt card -->
-    <!-- Receipt № MS-2026 0421-AH Your stay Check in 25 Apr Saturday · 15:00 Check
+      <!-- Receipt card -->
+      <!-- Receipt № MS-2026 0421-AH Your stay Check in 25 Apr Saturday · 15:00 Check
     out 29 Apr Wednesday · 11:00 Room · La Garrigue · 4 nights € 620.00
     Breakfast · 2 guests € 96.00 Tourist tax € 14.40 Total paid € 730.40 Paid ·
     Wise · GBP -->
-    <!-- Barcode image -->
+      <!-- Barcode image -->
 
-    <!-- Note from host card -->
-    <!-- Welcome A note from your host, Margaux. We're so glad you're coming. The
+      <!-- Note from host card -->
+      <!-- Welcome A note from your host, Margaux. We're so glad you're coming. The
     shutters will be open, the lemonade cold, and the cat - Poivre - pretending
     not to notice you. Room La Garrigue -->
 
-    <!-- Booking cards end -->
+      <!-- Booking cards end -->
 
-    <!-- Guest info row starts -->
+      <!-- Guest info row starts -->
 
-    <!-- Arrival -->
-    <!-- Arrival 01 Check-in from 15:00 Sat, 25 April Ring the brass bell by the blue
+      <!-- Arrival -->
+      <!-- Arrival 01 Check-in from 15:00 Sat, 25 April Ring the brass bell by the blue
     door. If we're at the market, the key is in the terracotta pot by the olive
     tree. -->
 
-    <!-- Wifi -->
-    <!-- Wifi 02 Le Soleil · Guest Password below Network Le Soleil · Guest Password
+      <!-- Wifi -->
+      <!-- Wifi 02 Le Soleil · Guest Password below Network Le Soleil · Guest Password
     soleil-2026 Copy -->
 
-    <!-- Breakfast -->
-    <!-- Breakfast 03 Served 8 - 10:30 On the terrace Fresh figs, Marseille honey,
+      <!-- Breakfast -->
+      <!-- Breakfast 03 Served 8 - 10:30 On the terrace Fresh figs, Marseille honey,
     pain au levain, and espresso. Gluten-free option? Leave a note the night
     before. -->
 
-    <!-- Guest info row ends -->
+      <!-- Guest info row ends -->
 
-    <!-- Main content ends -->
+      <!-- Main content ends -->
+    </main>
   </body>
 </html>

@@ -1,6 +1,9 @@
 #sidebar {
   font-family: Fraunces;
   font-weight: 400;
+  padding-top: 8px;
+  width: 251px;
+  border-right: 1px solid hsl(36, 22%, 86%);
 }
 
 #list-of-nav-links {
