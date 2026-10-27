@@ -6,6 +6,36 @@
   color: hsl(33, 15%, 15%);
 }
 
+.color-neutral-600 {
+  color: hsl(33, 17%, 41%);
+}
+
+.color-neutral-400 {
+  color: hsl(36, 22%, 86%);
+}
+
+.color-neutral-700 {
+  color: hsl(32, 20%, 29%);
+}
+.color-terracotta-600 {
+  color: hsl(15, 74%, 41%);
+}
+
+.color-terracotta-500 {
+  color: hsl(18, 62%, 47%);
+}
+
+.color-terracotta-400 {
+  color: hsl(22, 72%, 56%);
+}
+
+.color-sun-300 {
+  color: hsl(44, 84%, 75%);
+}
+/* .color-neutral-500 {
+  color: hsl(33, 17%, 41%);
+} */
+
 .flex-direction-column {
   flex-direction: column;
 }
@@ -38,14 +68,21 @@
   text-transform: uppercase;
 }
 
-.color-terracotta-600 {
-  color: hsl(15, 74%, 41%);
-}
-
 .font-weight-600 {
   font-weight: 600;
+}
+.font-weight-500 {
+  font-weight: 500;
 }
 
 .font-weight-400 {
   font-weight: 400;
+}
+
+.justify-content-space-btw {
+  justify-content: space-between;
+}
+
+.bg-neutral-50 {
+  background-color: hsl(40, 60%, 98%);
 }

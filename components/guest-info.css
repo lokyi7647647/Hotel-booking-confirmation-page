@@ -1,0 +1,31 @@
+#guest-info {
+  margin-top: 3.04rem;
+}
+
+.guest-info-card-size {
+  width: 351px;
+  height: 252px;
+  border: 1px solid hsl(36, 22%, 86%);
+  border-radius: 1rem;
+  padding: 1.4375rem 1.1875rem;
+  box-sizing: border-box;
+}
+
+#key-bg {
+  background-color: hsl(15, 74%, 41%);
+  border-radius: 0.5rem;
+  padding: 7px 8px 8px 8px;
+}
+
+#guest-info-card-title {
+  font-size: 0.86rem;
+  padding-left: 0.6rem;
+  padding-top: 0.7rem;
+  letter-spacing: 2.2px;
+}
+
+#guest-card-ordering {
+  right: 0;
+  top: 0.4rem;
+  font-size: 1.5rem;
+}

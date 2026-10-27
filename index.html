@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="components/weather-card.css" />
     <link rel="stylesheet" href="components/side-bar-footer.css" />
     <link rel="stylesheet" href="components/main-header.css" />
+    <link rel="stylesheet" href="components/receipt-card.css" />
+    <link rel="stylesheet" href="components/welcome-card.css" />
+    <link rel="stylesheet" href="components/guest-info.css" />
 
     <title>Frontend Mentor | Hotel booking confirmation page</title>
   </head>
@@ -111,18 +114,18 @@
     <!-- <div id="big-line-separator"></div> -->
     <!-- Main content starts -->
     <main class="display-flex flex-direction-column">
-      <header class="display-flex">
+      <header id="main-header" class="display-flex">
         <div>
-          <h1
+          <p
             id="booking-confirmed"
             class="font-dm-mono text-transform-uppercase font-weight-400"
           >
             Booking · Confirmed
-          </h1>
-          <h2 id="booking-person-name" class="font-fraunces font-weight-400">
+          </p>
+          <h1 id="booking-person-name" class="font-fraunces font-weight-400">
             Bienvenue,
             <span class="font-style-italic color-terracotta-600">Lucia.</span>
-          </h2>
+          </h1>
         </div>
 
         <div id="button-actions" class="display-flex">
@@ -132,43 +135,173 @@
       </header>
 
       <!-- Booking cards start -->
+      <section id="card-container" class="display-flex">
+        <!-- Receipt card -->
+        <article id="receipt-card" class="bg-neutral-50">
+          <header id="receipt-card-header" class="display-flex">
+            <div id="receipt-card-header-left-info">
+              <p class="font-dm-mono text-transform-uppercase">Receipt</p>
+              <h2 class="font-fraunces">Your stay</h2>
+            </div>
+            <div id="receipt-card-header-right-info" class="font-dm-mono">
+              <p>№ MS-2026</p>
+              <p>0421-AH</p>
+            </div>
+          </header>
+          <hr class="card-line-size" />
+          <section class="display-flex">
+            <section id="check-in-info">
+              <p class="font-dm-mono text-transform-uppercase">Check in</p>
+              <div>
+                <h1 class="font-fraunces font-weight-400 color-charcoal-gray">
+                  25 Apr
+                </h1>
+                <p class="font-dm-sans">Saturday · 15:00</p>
+              </div>
+            </section>
+            <section id="check-out-info">
+              <p class="font-dm-mono text-transform-uppercase">Check out</p>
+              <div>
+                <h1 class="font-fraunces font-weight-400 color-charcoal-gray">
+                  29 Apr
+                </h1>
+                <p class="font-dm-sans">Wednesday · 11:00</p>
+              </div>
+            </section>
+          </section>
+          <hr class="card-line-size" />
+          <ul
+            id="list-of-purchases"
+            class="font-dm-sans display-flex flex-direction-column"
+          >
+            <li class="purchase-name display-flex">
+              Room · La Garrigue &times 4 nights
+              <span class="purhcase-cost font-dm-mono">€ 620.00</span>
+            </li>
+            <li class="purchase-name display-flex">
+              Breakfast &times 2 guests
+              <span class="purhcase-cost font-dm-mono">€ 96.00</span>
+            </li>
+            <li class="purchase-name display-flex">
+              <p class="color-neutral-600">Tourist tax</p>
+              <span class="purhcase-cost font-dm-mono color-neutral-600">
+                € 14.40
+              </span>
+            </li>
+          </ul>
 
-      <!-- Receipt card -->
-      <section>
-        <div>
-          <p>
-            Receipt № MS-2026 0421-AH Your stay Check in 25 Apr Saturday · 15:00
-            Check out 29 Apr Wednesday · 11:00 Room · La Garrigue · 4 nights €
-            620.00 Breakfast · 2 guests € 96.00 Tourist tax € 14.40 Total paid €
-            730.40 Paid · Wise · GBP vbdsjkvbsdjkv
+          <hr class="card-line-size border-bottom-solid-neutral-600" />
+
+          <div class="display-flex justify-content-space-btw">
+            <p
+              id="total-paid"
+              class="text-transform-uppercase font-dm-mono color-neutral-600"
+            >
+              Total paid
+            </p>
+            <span id="total-cost" class="font-fraunces">€ 730.40</span>
+          </div>
+          <div class="display-flex justify-content-space-btw">
+            <p
+              id="paid-wise-gbp"
+              class="font-dm-mono color-neutral-600 text-transform-uppercase"
+            >
+              Paid · Wise · GBP
+            </p>
+            <img src="assets/images/icon-barcode.svg" alt="barcode" />
+          </div>
+        </article>
+
+        <!-- Welcome card -->
+        <article id="welcome-card" class="position-relative">
+          <div id="welcome-card-line" class="card-line-size"></div>
+          <header
+            id="welcome-card-header"
+            class="display-flex justify-content-space-btw"
+          >
+            <h1
+              id="welcome-card-header-title"
+              class="text-transform-uppercase font-dm-mono font-weight-400"
+            >
+              Welcome card
+            </h1>
+            <img src="assets/images/icon-sun.svg" alt="sun" />
+          </header>
+
+          <p
+            id="welcome-card-intro"
+            class="font-fraunces font-style-italic color-sun-300"
+          >
+            A note from your host,
           </p>
-        </div>
+
+          <p
+            id="welcome-card-host-name"
+            class="font-fraunces font-style-italic"
+          >
+            Margaux.
+          </p>
+
+          <p id="welcome-card-message" class="font-dm-sans">
+            We're so glad you're coming. The shutters will be open, the lemonade
+            cold, and the cat - Poivre - pretending not to notice you.
+          </p>
+
+          <footer id="room">
+            <p id="room-eyebrow" class="text-transform-uppercase font-dm-mono">
+              Room
+            </p>
+            <p id="room-type" class="font-fraunces">La Garrigue</p>
+          </footer>
+        </article>
       </section>
-
-      <!-- Barcode image -->
-
-      <!-- Note from host card -->
-      <!-- Welcome A note from your host, Margaux. We're so glad you're coming. The
-    shutters will be open, the lemonade cold, and the cat - Poivre - pretending
-    not to notice you. Room La Garrigue -->
-
+      <p
+        id="hover-prompt"
+        class="text-transform-uppercase font-dm-mono display-flex"
+      >
+        <img src="assets/images/icon-sparkle.svg" alt="red sparkle" />
+        <span id="hover-prompt-text" class="color-neutral-600"
+          >Hover to fan</span
+        >
+        <img src="assets/images/icon-sparkle.svg" alt="red sparkle" />
+      </p>
       <!-- Booking cards end -->
 
       <!-- Guest info row starts -->
+      <article id="guest-info" class="display-flex">
+        <!-- Arrival -->
+        <article class="guest-info-card-size bg-neutral-50">
+          <header class="display-flex position-relative color-terracotta-600">
+            <img id="key-bg" src="assets/images/icon-key.svg" alt="key" />
+            <h1
+              id="guest-info-card-title"
+              class="text-transform-uppercase font-dm-mono font-weight-500"
+            >
+              Arrival
+            </h1>
+            <span
+              id="guest-card-ordering"
+              class="font-fraunces position-absolute"
+              >01</span
+            >
+          </header>
 
-      <!-- Arrival -->
-      <!-- Arrival 01 Check-in from 15:00 Sat, 25 April Ring the brass bell by the blue
-    door. If we're at the market, the key is in the terracotta pot by the olive
-    tree. -->
-
-      <!-- Wifi -->
-      <!-- Wifi 02 Le Soleil · Guest Password below Network Le Soleil · Guest Password
-    soleil-2026 Copy -->
-
-      <!-- Breakfast -->
-      <!-- Breakfast 03 Served 8 - 10:30 On the terrace Fresh figs, Marseille honey,
-    pain au levain, and espresso. Gluten-free option? Leave a note the night
-    before. -->
+          <!-- Check-in from 15:00 Sat, 25 April Ring the brass bell by the blue
+          door. If we're at the market, the key is in the terracotta pot by the
+          olive tree. -->
+        </article>
+        <!-- Wifi -->
+        <!-- <article>
+          Wifi 02 Le Soleil · Guest Password below Network Le Soleil · Guest
+          Password soleil-2026 Copy
+        </article>
+         Breakfast -->
+        <!-- <article>
+          Breakfast 03 Served 8 - 10:30 On the terrace Fresh figs, Marseille
+          honey, pain au levain, and espresso. Gluten-free option? Leave a note
+          the night before.
+        </article> -->
+      </article>
 
       <!-- Guest info row ends -->
 

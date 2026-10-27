@@ -4,30 +4,31 @@
 }
 
 hr {
+  width: 222px;
   border: 0;
   border-bottom: 1px dotted hsl(36, 22%, 86%);
 }
 
-footer > :not(hr) {
+#sidebar-mini-footer > :not(hr) {
   font-size: 0.635rem;
   color: hsl(33, 17%, 41%);
   letter-spacing: 0.9px;
   transform: scaleY(0.9);
 }
 
-footer > :nth-child(2) {
+#sidebar-mini-footer > :nth-child(2) {
   margin-top: 15.9px;
 }
 
-footer > :nth-child(2) span {
+#sidebar-mini-footer > :nth-child(2) span {
   margin-left: 5px;
   margin-right: 1px;
 }
 
-footer > :is(:nth-child(3), :nth-child(5)) {
+#sidebar-mini-footer > :is(:nth-child(3), :nth-child(5)) {
   margin-top: 11px;
 }
 
-footer > :nth-child(4) {
+#sidebar-mini-footer > :nth-child(4) {
   margin-top: 1px;
 }

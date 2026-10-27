@@ -1,0 +1,146 @@
+#card-container {
+  margin-top: 67px;
+  margin-left: 154px;
+}
+
+#receipt-card {
+  height: 421px;
+  width: 400px;
+  rotate: -3.55deg;
+  border-radius: 20px;
+  box-shadow:
+    -10px 52px 42px -73px hsl(33, 15%, 15%),
+    -155px 165px 25px -177px hsl(33, 15%, 15%),
+    -41px -10px 10px -50px hsl(33, 15%, 15%);
+  padding: 0 25px 0 22px;
+  box-sizing: border-box;
+}
+
+#receipt-card-header {
+  justify-content: space-between;
+  color: hsl(33, 17%, 41%);
+  font-size: 0.61rem;
+  letter-spacing: 1.1px;
+  margin-bottom: 0.8rem;
+}
+
+#receipt-card-header-left-info {
+  margin-top: 1.54rem;
+}
+
+#receipt-card-header-left-info > :last-child {
+  font-size: 1.25rem;
+  color: hsl(33, 15%, 15%);
+  margin-top: 0.375rem;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+}
+
+#receipt-card-header-right-info {
+  text-align: end;
+  margin-top: 1.448rem;
+}
+
+#receipt-card-header-right-info > :last-child {
+  margin-top: 0.2rem;
+}
+
+.card-line-size {
+  width: 350px;
+  margin: 0;
+}
+
+#check-in-info {
+  margin-top: 1.2545rem;
+}
+
+:is(#check-in-info, #check-out-info) > :first-child {
+  margin-left: 3.42rem;
+  font-size: 0.62rem;
+  color: hsl(33, 17%, 41%);
+  letter-spacing: 1px;
+}
+
+:is(#check-in-info, #check-out-info) > :nth-child(2) {
+  margin-left: 2.1rem;
+}
+
+:is(#check-in-info, #check-out-info) > :nth-child(2) > h1 {
+  margin-top: 0.57rem;
+  font-size: 2rem;
+  letter-spacing: -0.2px;
+}
+
+:is(#check-in-info, #check-out-info) > :nth-child(2) > p {
+  font-size: 0.76rem;
+  color: hsl(32, 20%, 29%);
+  letter-spacing: 0.1px;
+  margin-top: 0.25rem;
+  margin-left: 0.067rem;
+  font-weight: 500;
+  word-spacing: 1px;
+}
+
+#check-out-info {
+  margin-left: 3rem;
+  margin-top: 1.19rem;
+}
+
+#check-out-info > :nth-child(2) > h1 {
+  margin-top: 0.56rem;
+  margin-left: 0.2rem;
+}
+
+#check-out-info > :nth-child(2) > p {
+  margin-left: 0;
+  margin-bottom: 1.2rem;
+}
+
+.purchase-name {
+  font-size: 0.865em;
+  color: hsl(33, 15%, 15%);
+  font-weight: 500;
+  justify-content: space-between;
+}
+
+#list-of-purchases {
+  margin-top: 0.81rem;
+  margin-left: 0.1rem;
+  row-gap: 0.65rem;
+  margin-bottom: 1.3rem;
+}
+
+.purhcase-cost {
+  font-size: 0.75rem;
+}
+
+#receipt-card > hr:nth-of-type(3) {
+  border-bottom: 1px solid hsl(33, 17%, 41%);
+  margin-left: 0.2rem;
+}
+
+#total-paid {
+  margin-top: 1.3rem;
+  font-size: 0.77em;
+  letter-spacing: 1.8px;
+  margin-left: 0.14rem;
+}
+
+#total-cost {
+  display: inline-block;
+  font-size: 1.47rem;
+  margin-top: 0.79rem;
+  transform: scaleY(1.03);
+}
+
+#paid-wise-gbp {
+  font-size: 0.62rem;
+  margin-top: 1.9rem;
+  margin-left: 0.15rem;
+  letter-spacing: 1.1px;
+}
+
+img[alt="barcode"] {
+  margin-top: 1.35rem;
+  margin-right: -1.5px;
+}

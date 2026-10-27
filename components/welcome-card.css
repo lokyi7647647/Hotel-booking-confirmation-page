@@ -1,0 +1,99 @@
+#welcome-card {
+  height: 421px;
+  width: 401px;
+  background-image: linear-gradient(
+    45deg,
+    hsl(15, 69%, 37%),
+    65%,
+    hsl(22, 72%, 56%)
+  );
+  border-radius: 20px;
+  rotate: 3.9deg;
+  right: 0.5rem;
+  padding: 0 24px 0 22px;
+  box-sizing: border-box;
+  box-shadow:
+    0px 19px 50px -10px hsl(15deg 74% 41% / 69%),
+    inset 50px -130px 110px 0px hsl(15, 69%, 37%);
+}
+
+#welcome-card-line {
+  margin-top: 1.5rem;
+  background-image: linear-gradient(
+    to right,
+    hsl(22, 72%, 56%) 60%,
+    transparent 60%
+  );
+  background-size: 8px auto;
+  height: 1px;
+  margin-left: 0.54rem;
+}
+
+#welcome-card-header-title {
+  color: hsl(41deg 100% 93% / 60%);
+  font-size: 0.65rem;
+  margin-left: 0.2rem;
+  letter-spacing: 0.6px;
+  word-spacing: 1.2px;
+}
+
+#welcome-card-header {
+  margin-top: 0.91rem;
+}
+
+#welcome-card-intro {
+  font-size: 1.23rem;
+  margin-top: 1.25rem;
+  margin-left: 0.2rem;
+  opacity: 0.8;
+}
+
+#welcome-card-host-name {
+  margin-top: 0.44rem;
+  margin-left: 0.2rem;
+  font-size: 2.43rem;
+  color: hsl(41deg 100% 93% / 90%);
+}
+
+#welcome-card-message {
+  color: hsl(41deg 100% 93% / 72%);
+  font-size: 0.851rem;
+  margin-top: 1.6rem;
+  margin-left: 0.15rem;
+  letter-spacing: 0.1px;
+  word-spacing: 0.5px;
+  line-height: 1.45;
+}
+
+#room {
+  color: hsl(41deg 100% 93% / 72%);
+  margin-top: 4.8rem;
+  margin-left: 0.13rem;
+}
+
+#room-eyebrow {
+  font-size: 0.62rem;
+  letter-spacing: 0.8px;
+}
+
+#room-type {
+  margin-top: 0.5rem;
+  color: hsl(41deg 100% 93% / 90%);
+  font-size: 1.2rem;
+  letter-spacing: 0.3px;
+}
+
+#hover-prompt {
+  padding-left: 30.8rem;
+  align-items: start;
+}
+#hover-prompt > img {
+  padding-top: 1.07rem;
+}
+
+#hover-prompt-text {
+  padding: 0.9rem 0.49rem 0 0.49rem;
+  font-size: 0.6rem;
+  letter-spacing: 1.1px;
+  word-spacing: 0.8px;
+}
