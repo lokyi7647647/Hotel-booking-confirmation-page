@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -30,7 +29,6 @@
   </head>
   <body class="display-flex">
     <aside id="sidebar">
-      <!-- Sidebar starts -->
       <div class="display-flex">
         <img
           id="sun-logo"
@@ -45,7 +43,7 @@
       </div>
 
       <div class="line-separator"></div>
-      <!-- Guest navigation -->
+
       <nav>
         <ul id="list-of-nav-links" class="display-flex flex-direction-column">
           <li class="active-link">
@@ -92,7 +90,6 @@
         </ul>
       </nav>
 
-      <!-- Local weather -->
       <article id="weather-card" class="font-dm-mono position-relative">
         <div id="card-text-container" class="position-absolute">
           <p id="location">TODAY IN CASSIS</p>
@@ -110,9 +107,6 @@
       </footer>
     </aside>
 
-    <!-- Sidebar ends -->
-    <!-- <div id="big-line-separator"></div> -->
-    <!-- Main content starts -->
     <main class="display-flex flex-direction-column">
       <header id="main-header" class="display-flex">
         <div>
@@ -134,9 +128,7 @@
         </div>
       </header>
 
-      <!-- Booking cards start -->
       <section id="card-container" class="display-flex">
-        <!-- Receipt card -->
         <article id="receipt-card" class="bg-neutral-50">
           <header id="receipt-card-header" class="display-flex">
             <div id="receipt-card-header-left-info">
@@ -212,7 +204,6 @@
           </div>
         </article>
 
-        <!-- Welcome card -->
         <article id="welcome-card" class="position-relative">
           <div id="welcome-card-line" class="card-line-size"></div>
           <header
@@ -265,47 +256,143 @@
         >
         <img src="assets/images/icon-sparkle.svg" alt="red sparkle" />
       </p>
-      <!-- Booking cards end -->
 
-      <!-- Guest info row starts -->
       <article id="guest-info" class="display-flex">
-        <!-- Arrival -->
-        <article class="guest-info-card-size bg-neutral-50">
+        <article
+          class="guest-info-card-size bg-neutral-50 border-1px-solid-neutral-400"
+        >
           <header class="display-flex position-relative color-terracotta-600">
-            <img id="key-bg" src="assets/images/icon-key.svg" alt="key" />
+            <img
+              class="bg-terracotta-600 header-icon-frame"
+              src="assets/images/icon-key.svg"
+              alt=""
+            />
             <h1
-              id="guest-info-card-title"
-              class="text-transform-uppercase font-dm-mono font-weight-500"
+              class="guest-info-card-title text-transform-uppercase font-dm-mono font-weight-500"
             >
               Arrival
             </h1>
-            <span
-              id="guest-card-ordering"
-              class="font-fraunces position-absolute"
+            <span class="guest-card-ordering font-fraunces position-absolute"
               >01</span
             >
           </header>
+          <h2 class="guest-info-card-sub-title font-fraunces font-weight-400">
+            Check-in from <time datetime="15:00">15:00</time>
+          </h2>
+          <time
+            class="guest-info-card-eyebrow font-dm-sans color-neutral-600"
+            datetime="04-25"
+            >Sat, 25 April</time
+          >
+          <p class="guest-info-card-desc font-dm-sans">
+            Ring the brass bell by the blue door. If we're at
+            <span id="guest-info-arrival-card-line-height"
+              >the market, the key is in the terracotta pot by the olive
+              tree.</span
+            >
+          </p>
+        </article>
 
-          <!-- Check-in from 15:00 Sat, 25 April Ring the brass bell by the blue
-          door. If we're at the market, the key is in the terracotta pot by the
-          olive tree. -->
+        <article
+          class="guest-info-card-size bg-neutral-50 border-1px-solid-neutral-400"
+        >
+          <header class="display-flex position-relative color-blue-500">
+            <img
+              class="bg-blue-500 header-icon-frame"
+              src="assets/images/icon-wifi.svg"
+              alt=""
+            />
+            <h1
+              class="guest-info-card-title text-transform-uppercase font-dm-mono font-weight-500"
+            >
+              Wifi
+            </h1>
+            <span class="guest-card-ordering font-fraunces position-absolute"
+              >02</span
+            >
+          </header>
+          <h2 class="guest-info-card-sub-title font-fraunces font-weight-400">
+            Le Soleil · Guest
+          </h2>
+          <p
+            class="guest-info-card-eyebrow font-dm-sans color-neutral-600"
+            datetime="04-25"
+          >
+            Password below
+          </p>
+
+          <div class="wifi-info wifi-info-network-col-gap display-flex">
+            <span
+              class="text-transform-uppercase font-dm-mono wifi-info-eyebrow color-neutral-600"
+              >Network</span
+            >
+            <span
+              class="font-dm-sans wifi-info-container wifi-info-details color-charcoal-gray font-dm-sans font-weight-500"
+              >Le <span>Soleil</span><span> · Guest</span></span
+            >
+          </div>
+          <div class="wifi-info wifi-info-password-col-gap display-flex">
+            <span
+              class="text-transform-uppercase font-dm-mono wifi-info-eyebrow color-neutral-600"
+              >Password
+            </span>
+            <span
+              id="password-detail"
+              class="font-dm-sans wifi-info-container wifi-info-details color-charcoal-gray font-dm-sans font-weight-500 display-flex"
+              >soleil-2026
+              <span
+                id="copy-prompt"
+                class="text-transform-uppercase color-neutral-600 border-1px-solid-neutral-400"
+                >Cop y</span
+              >
+            </span>
+          </div>
         </article>
-        <!-- Wifi -->
-        <!-- <article>
-          Wifi 02 Le Soleil · Guest Password below Network Le Soleil · Guest
-          Password soleil-2026 Copy
+
+        <article
+          id="guest-info-breakfast-card"
+          class="guest-info-card-size bg-neutral-50 border-1px-solid-neutral-400"
+        >
+          <header class="display-flex position-relative color-rose-500">
+            <img
+              class="bg-rose-500 header-icon-frame"
+              src="assets/images/icon-breakfast.svg"
+              alt=""
+            />
+            <h1
+              class="guest-info-card-title text-transform-uppercase font-dm-mono font-weight-500"
+            >
+              Breakfast
+            </h1>
+            <span class="guest-card-ordering font-fraunces position-absolute"
+              >03</span
+            >
+          </header>
+          <h2
+            id="guest-info-breakfast-card-main"
+            class="guest-info-card-sub-title font-fraunces font-weight-400"
+          >
+            Served
+            <time datetime="15:00"
+              >8 <span class="font-dm-sans">-</span> 10:30</time
+            >
+          </h2>
+          <p
+            id="guest-info-breakfast-card-eyebrow"
+            class="guest-info-card-eyebrow font-dm-sans color-neutral-600"
+            datetime="04-25"
+          >
+            On the terrace
+          </p>
+          <p class="guest-info-card-desc font-dm-sans">
+            Fresh figs, Marseille honey, pain au levain, and
+            <span id="guest-info-break-card-line-height"
+              >espresso. Gluten-free option? Leave a note the night
+              before.</span
+            >
+          </p>
         </article>
-         Breakfast -->
-        <!-- <article>
-          Breakfast 03 Served 8 - 10:30 On the terrace Fresh figs, Marseille
-          honey, pain au levain, and espresso. Gluten-free option? Leave a note
-          the night before.
-        </article> -->
       </article>
-
-      <!-- Guest info row ends -->
-
-      <!-- Main content ends -->
     </main>
   </body>
 </html>

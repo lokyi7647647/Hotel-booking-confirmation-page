@@ -1,31 +1,129 @@
 #guest-info {
   margin-top: 3.04rem;
+  column-gap: 1.5rem;
 }
 
 .guest-info-card-size {
   width: 351px;
   height: 252px;
-  border: 1px solid hsl(36, 22%, 86%);
   border-radius: 1rem;
   padding: 1.4375rem 1.1875rem;
   box-sizing: border-box;
+  box-shadow: 0px 24px 25px -20px hsl(33deg 15% 15% / 11%);
 }
 
-#key-bg {
-  background-color: hsl(15, 74%, 41%);
+.header-icon-frame {
   border-radius: 0.5rem;
   padding: 7px 8px 8px 8px;
+  height: 25px;
+  width: 24px;
 }
 
-#guest-info-card-title {
+.guest-info-card-title {
   font-size: 0.86rem;
   padding-left: 0.6rem;
   padding-top: 0.7rem;
   letter-spacing: 2.2px;
 }
 
-#guest-card-ordering {
+.guest-card-ordering {
   right: 0;
   top: 0.4rem;
   font-size: 1.5rem;
+}
+
+.guest-info-card-sub-title {
+  margin-top: 1.66rem;
+  letter-spacing: -0.2px;
+  transform: scaley(1.04);
+}
+
+.guest-info-card-eyebrow {
+  font-size: 0.75rem;
+  margin-top: 0.59rem;
+  display: inline-block;
+  letter-spacing: 0.3px;
+  word-spacing: 0.3px;
+  margin-bottom: 0.91rem;
+}
+
+.guest-info-card-desc {
+  font-size: 0.9rem;
+  color: hsl(32, 20%, 29%);
+  letter-spacing: -0.2px;
+  word-spacing: 0.1px;
+  line-height: 1.5;
+}
+
+#guest-info-arrival-card-line-height {
+  display: inline-block;
+  line-height: 1.4;
+}
+
+.wifi-info {
+  background-color: hsl(30, 24%, 93%);
+  height: 32px;
+  width: 297px;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  padding: 0.5rem 0rem 0rem 0.6rem;
+  letter-spacing: 2px;
+  align-items: start;
+
+  margin-bottom: 0.3rem;
+}
+
+.wifi-info-network-col-gap {
+  column-gap: 7.47rem;
+}
+
+.wifi-info-password-col-gap {
+  column-gap: 5.4rem;
+}
+
+.wifi-info-eyebrow {
+  font-size: 0.75rem;
+}
+
+.wifi-info-details {
+  font-size: 0.75rem;
+  letter-spacing: -0.07px;
+  word-spacing: 1.1px;
+}
+
+.wifi-info-details > span {
+  letter-spacing: 0.3px;
+  word-spacing: 0;
+}
+
+#password-detail {
+  letter-spacing: 0.29px;
+}
+
+#copy-prompt {
+  font-size: 0.6rem;
+  margin-left: 0.4rem;
+  border-radius: 1rem;
+  padding: 3px 7px 2px 7px;
+  word-spacing: -2px;
+  margin-top: -0.14rem;
+}
+
+#guest-info-breakfast-card {
+  padding-left: 18.5px;
+  padding-right: 20px;
+}
+
+#guest-info-breakfast-card-main {
+  margin-top: 1.6rem;
+}
+
+#guest-info-breakfast-card-eyebrow {
+  margin-top: 0.5rem;
+}
+
+#guest-info-break-card-line-height {
+  display: inline-block;
+  line-height: 1.4;
+  margin-top: -0.1rem;
 }
