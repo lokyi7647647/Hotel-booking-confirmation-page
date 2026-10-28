@@ -4,26 +4,27 @@
 }
 
 .guest-info-card-size {
-  width: 351px;
-  height: 252px;
+  width: 21.9375rem;
+  height: 15.75rem;
   border-radius: 1rem;
   padding: 1.4375rem 1.1875rem;
   box-sizing: border-box;
-  box-shadow: 0px 24px 25px -20px hsl(33deg 15% 15% / 11%);
+  box-shadow: 0 1.5rem 1.5625rem -1.25rem hsl(33deg 15% 15% / 11%);
+  z-index: 2;
 }
 
 .header-icon-frame {
   border-radius: 0.5rem;
-  padding: 7px 8px 8px 8px;
-  height: 25px;
-  width: 24px;
+  padding: 0.4375rem 0.5rem 0.5rem 0.5rem;
+  height: 1.5625rem;
+  width: 1.5rem;
 }
 
 .guest-info-card-title {
   font-size: 0.86rem;
   padding-left: 0.6rem;
   padding-top: 0.7rem;
-  letter-spacing: 2.2px;
+  letter-spacing: 0.1375rem;
 }
 
 .guest-card-ordering {
@@ -34,24 +35,24 @@
 
 .guest-info-card-sub-title {
   margin-top: 1.66rem;
-  letter-spacing: -0.2px;
-  transform: scaley(1.04);
+  letter-spacing: -0.0125rem;
+  transform: scaleY(1.04);
 }
 
 .guest-info-card-eyebrow {
   font-size: 0.75rem;
   margin-top: 0.59rem;
   display: inline-block;
-  letter-spacing: 0.3px;
-  word-spacing: 0.3px;
+  letter-spacing: 0.01875rem;
+  word-spacing: 0.01875rem;
   margin-bottom: 0.91rem;
 }
 
 .guest-info-card-desc {
   font-size: 0.9rem;
   color: hsl(32, 20%, 29%);
-  letter-spacing: -0.2px;
-  word-spacing: 0.1px;
+  letter-spacing: -0.0125rem;
+  word-spacing: 0.00625rem;
   line-height: 1.5;
 }
 
@@ -62,14 +63,13 @@
 
 .wifi-info {
   background-color: hsl(30, 24%, 93%);
-  height: 32px;
-  width: 297px;
+  height: 2rem;
+  width: 18.5625rem;
   border-radius: 0.4rem;
   box-sizing: border-box;
   padding: 0.5rem 0rem 0rem 0.6rem;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   align-items: start;
-
   margin-bottom: 0.3rem;
 }
 
@@ -87,31 +87,31 @@
 
 .wifi-info-details {
   font-size: 0.75rem;
-  letter-spacing: -0.07px;
-  word-spacing: 1.1px;
+  letter-spacing: -0.004375rem;
+  word-spacing: 0.06875rem;
 }
 
 .wifi-info-details > span {
-  letter-spacing: 0.3px;
+  letter-spacing: 0.01875rem;
   word-spacing: 0;
 }
 
 #password-detail {
-  letter-spacing: 0.29px;
+  letter-spacing: 0.018125rem;
 }
 
 #copy-prompt {
   font-size: 0.6rem;
   margin-left: 0.4rem;
   border-radius: 1rem;
-  padding: 3px 7px 2px 7px;
-  word-spacing: -2px;
+  padding: 0.1875rem 0.4375rem 0.125rem 0.4375rem;
+  word-spacing: -0.125rem;
   margin-top: -0.14rem;
 }
 
 #guest-info-breakfast-card {
-  padding-left: 18.5px;
-  padding-right: 20px;
+  padding-left: 1.15625rem;
+  padding-right: 1.25rem;
 }
 
 #guest-info-breakfast-card-main {

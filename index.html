@@ -28,7 +28,7 @@
     <title>Frontend Mentor | Hotel booking confirmation page</title>
   </head>
   <body class="display-flex">
-    <aside id="sidebar">
+    <aside id="sidebar" aria-label="Guest navigation">
       <div class="display-flex">
         <img
           id="sun-logo"
@@ -91,11 +91,9 @@
       </nav>
 
       <article id="weather-card" class="font-dm-mono position-relative">
-        <div id="card-text-container" class="position-absolute">
-          <p id="location">TODAY IN CASSIS</p>
-          <p id="degree" class="font-fraunces">27°</p>
-          <p id="weather-desc" class="font-dm-sans">Sunny · light breeze</p>
-        </div>
+        <p id="location">TODAY IN CASSIS</p>
+        <p id="degree" class="font-fraunces">27°</p>
+        <p id="weather-desc" class="font-dm-sans">Sunny · light breeze</p>
       </article>
 
       <footer id="sidebar-mini-footer" class="position-absolute font-dm-mono">
@@ -327,7 +325,7 @@
               >Network</span
             >
             <span
-              class="font-dm-sans wifi-info-container wifi-info-details color-charcoal-gray font-dm-sans font-weight-500"
+              class="font-dm-sans wifi-info-container wifi-info-details color-charcoal-gray font-weight-500"
               >Le <span>Soleil</span><span> · Guest</span></span
             >
           </div>

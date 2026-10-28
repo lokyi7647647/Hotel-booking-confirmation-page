@@ -1,18 +1,18 @@
 #card-container {
-  margin-top: 67px;
-  margin-left: 154px;
+  margin-top: 4.1875rem;
+  margin-left: 9.625rem;
 }
 
 #receipt-card {
-  height: 421px;
-  width: 400px;
+  height: 26.3125rem;
+  width: 25rem;
   rotate: -3.55deg;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   box-shadow:
-    -10px 52px 42px -73px hsl(33, 15%, 15%),
-    -155px 165px 25px -177px hsl(33, 15%, 15%),
-    -41px -10px 10px -50px hsl(33, 15%, 15%);
-  padding: 0 25px 0 22px;
+    -0.625rem 3.25rem 2.625rem -4.5625rem hsl(33, 15%, 15%),
+    -9.6875rem 10.3125rem 1.5625rem -11.0625rem hsl(33, 15%, 15%),
+    -2.5625rem -0.625rem 0.625rem -3.125rem hsl(33, 15%, 15%);
+  padding: 0 1.5625rem 0 1.375rem;
   box-sizing: border-box;
 }
 
@@ -20,7 +20,7 @@
   justify-content: space-between;
   color: hsl(33, 17%, 41%);
   font-size: 0.61rem;
-  letter-spacing: 1.1px;
+  letter-spacing: 0.06875rem;
   margin-bottom: 0.8rem;
 }
 
@@ -33,7 +33,7 @@
   color: hsl(33, 15%, 15%);
   margin-top: 0.375rem;
   font-weight: 500;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.01875rem;
 }
 
 #receipt-card-header-right-info {
@@ -46,7 +46,7 @@
 }
 
 .card-line-size {
-  width: 350px;
+  width: 21.875rem;
   margin: 0;
 }
 
@@ -58,7 +58,7 @@
   margin-left: 3.42rem;
   font-size: 0.62rem;
   color: hsl(33, 17%, 41%);
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 }
 
 :is(#check-in-info, #check-out-info) > :nth-child(2) {
@@ -68,17 +68,17 @@
 :is(#check-in-info, #check-out-info) > :nth-child(2) > h1 {
   margin-top: 0.57rem;
   font-size: 2rem;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.0125rem;
 }
 
 :is(#check-in-info, #check-out-info) > :nth-child(2) > p {
   font-size: 0.76rem;
   color: hsl(32, 20%, 29%);
-  letter-spacing: 0.1px;
+  letter-spacing: 0.00625rem;
   margin-top: 0.25rem;
   margin-left: 0.067rem;
   font-weight: 500;
-  word-spacing: 1px;
+  word-spacing: 0.0625rem;
 }
 
 #check-out-info {
@@ -115,14 +115,14 @@
 }
 
 #receipt-card > hr:nth-of-type(3) {
-  border-bottom: 1px solid hsl(33, 17%, 41%);
+  border-bottom: 0.0625rem solid hsl(33, 17%, 41%);
   margin-left: 0.2rem;
 }
 
 #total-paid {
   margin-top: 1.3rem;
   font-size: 0.77em;
-  letter-spacing: 1.8px;
+  letter-spacing: 0.1125rem;
   margin-left: 0.14rem;
 }
 
@@ -137,10 +137,10 @@
   font-size: 0.62rem;
   margin-top: 1.9rem;
   margin-left: 0.15rem;
-  letter-spacing: 1.1px;
+  letter-spacing: 0.06875rem;
 }
 
 img[alt="barcode"] {
   margin-top: 1.35rem;
-  margin-right: -1.5px;
+  margin-right: -0.09375rem;
 }

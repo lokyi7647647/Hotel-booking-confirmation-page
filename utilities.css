@@ -105,5 +105,5 @@
 }
 
 .border-1px-solid-neutral-400 {
-  border: 1px solid hsl(36, 22%, 86%);
+  border: 0.0625rem solid hsl(36, 22%, 86%);
 }

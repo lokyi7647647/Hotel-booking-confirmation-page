@@ -1,36 +1,38 @@
 #sidebar {
   font-family: Fraunces;
   font-weight: 400;
-  padding-top: 8px;
-  width: 251px;
-  border-right: 1px solid hsl(36, 22%, 86%);
+  padding-top: 0.5rem;
+  width: 15.6875rem;
+  border-right: 0.0625rem solid hsl(36, 22%, 86%);
   flex-shrink: 0;
 }
 
 #list-of-nav-links {
-  padding: 0 0 0 8px;
-  margin-top: 17px;
+  padding: 0 0 0 0.5rem;
+  margin-top: 1.0625rem;
   row-gap: 0.2rem;
 }
 
 #list-of-nav-links > li {
-  height: 38px;
-  width: 228px;
-  padding-top: 1px;
+  height: 2.375rem;
+  width: 14.25rem;
+  padding-top: 0.0625rem;
 }
 
 .active-link {
   background: hsl(0, 0%, 100%);
   box-shadow:
-    1px 0px 0 0px #fcf9f4,
-    2px 0px 0 0px #f8f5f0,
-    3px 0px 0 0px #fcf7f1,
-    4px 0px 0 0px #faf5ef,
-    0px -1px 0 0 #fffef8,
-    0 -2px 0 0 #fffaf4,
-    0px -4px 0 0px #faf5ef,
-    0px 1px 0 0px hsl(30, 24%, 93%);
-  clip-path: rect(-4px 232px 40px 0px round 0.8rem 1.27rem 0.95rem 0.5rem);
+    0.0625rem 0 0 0 #fcf9f4,
+    0.125rem 0 0 0 #f8f5f0,
+    0.1875rem 0 0 0 #fcf7f1,
+    0.25rem 0 0 0 #faf5ef,
+    0 -0.0625rem 0 0 #fffef8,
+    0 -0.125rem 0 0 #fffaf4,
+    0 -0.25rem 0 0 #faf5ef,
+    0 0.0625rem 0 0 hsl(30, 24%, 93%);
+  clip-path: rect(
+    -0.25rem 14.5rem 2.5rem 0 round 0.8rem 1.27rem 0.95rem 0.5rem
+  );
 }
 
 .nav-link-container-pos {
@@ -44,7 +46,7 @@
   margin-left: 0.6em;
   margin-top: 0.1rem;
   font-weight: 530;
-  letter-spacing: -0.22px;
+  letter-spacing: -0.01375rem;
 }
 
 #list-of-nav-links > :is(:nth-child(4), :nth-child(5)) .nav-link-desc {
@@ -54,8 +56,8 @@
 #unread-message {
   display: inline-block;
   border-radius: 50%;
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   background-color: hsl(15, 74%, 41%);
   margin-left: 6.2rem;
   margin-top: 0.08rem;
