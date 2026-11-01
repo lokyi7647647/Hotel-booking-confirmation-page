@@ -12,7 +12,6 @@
     />
 
     <link rel="stylesheet" href="fonts.css" />
-    <link rel="stylesheet" href="sidebar.css" />
     <link rel="stylesheet" href="components/site-branding.css" />
     <link rel="stylesheet" href="components/multi-layered-lines.css" />
     <link rel="stylesheet" href="utilities.css" />
@@ -34,7 +33,7 @@
           id="sun-logo"
           class="position-relative"
           src="assets/images/illustration-sun.svg"
-          alt="sun"
+          alt=""
         />
         <span class="sun-logo-title display-flex">
           <span class="font-style-italic color-terracotta-600">Maison</span>
@@ -51,7 +50,7 @@
               href="#"
               aria-current="page"
               class="display-flex nav-link-container-pos"
-              ><img src="assets/images/icon-bed.svg" alt="bed" />
+              ><img src="assets/images/icon-bed.svg" alt="" />
               <span class="nav-link-desc display-flex"
                 ><span class="color-charcoal-gray">Your stay</span>
                 <span id="unread-message" class="position-relative"
@@ -63,13 +62,13 @@
 
           <li>
             <a href="#" class="display-flex nav-link-container-pos"
-              ><img src="assets/images/icon-house.svg" alt="house" />
+              ><img src="assets/images/icon-house.svg" alt="" />
               <span class="nav-link-desc">The house</span></a
             >
           </li>
           <li>
             <a href="#" class="display-flex nav-link-container-pos"
-              ><img src="assets/images/icon-pin.svg" alt="pin" />
+              ><img src="assets/images/icon-pin.svg" alt="" />
               <span class="nav-link-desc">Around town</span></a
             >
           </li>
@@ -77,13 +76,13 @@
             <a href="#" class="display-flex nav-link-container-pos"
               ><img
                 src="assets/images/icon-breakfast-outline.svg"
-                alt="dish"
+                alt=""
               /><span class="nav-link-desc">Breakfast</span></a
             >
           </li>
           <li>
             <a href="#" class="display-flex nav-link-container-pos"
-              ><img src="assets/images/icon-mail.svg" alt="mail" />
+              ><img src="assets/images/icon-mail.svg" alt="" />
               <span class="nav-link-desc">Messages</span></a
             >
           </li>
@@ -91,7 +90,7 @@
       </nav>
 
       <article id="weather-card" class="font-dm-mono position-relative">
-        <p id="location">TODAY IN CASSIS</p>
+        <h1 id="location">TODAY IN CASSIS</h1>
         <p id="degree" class="font-fraunces">27°</p>
         <p id="weather-desc" class="font-dm-sans">Sunny · light breeze</p>
       </article>
@@ -126,7 +125,7 @@
         </div>
       </header>
 
-      <section id="card-container" class="display-flex">
+      <div id="card-container" class="display-flex">
         <article id="receipt-card" class="bg-neutral-50">
           <header id="receipt-card-header" class="display-flex">
             <div id="receipt-card-header-left-info">
@@ -139,26 +138,40 @@
             </div>
           </header>
           <hr class="card-line-size" />
-          <section class="display-flex">
+          <div class="display-flex">
             <section id="check-in-info">
-              <p class="font-dm-mono text-transform-uppercase">Check in</p>
+              <h3 class="font-dm-mono text-transform-uppercase font-weight-400">
+                Check in
+              </h3>
               <div>
-                <h1 class="font-fraunces font-weight-400 color-charcoal-gray">
+                <time
+                  class="font-fraunces font-weight-400 color-charcoal-gray"
+                  datetime="04-25"
+                >
                   25 Apr
-                </h1>
-                <p class="font-dm-sans">Saturday · 15:00</p>
+                </time>
+                <time class="font-dm-sans" datetime="15:00"
+                  >Saturday · 15:00</time
+                >
               </div>
             </section>
             <section id="check-out-info">
-              <p class="font-dm-mono text-transform-uppercase">Check out</p>
+              <h3 class="font-dm-mono text-transform-uppercase font-weight-400">
+                Check out
+              </h3>
               <div>
-                <h1 class="font-fraunces font-weight-400 color-charcoal-gray">
+                <time
+                  class="font-fraunces font-weight-400 color-charcoal-gray"
+                  datetime="04-29"
+                >
                   29 Apr
-                </h1>
-                <p class="font-dm-sans">Wednesday · 11:00</p>
+                </time>
+                <time class="font-dm-sans" datetime="11:00"
+                  >Wednesday · 11:00</time
+                >
               </div>
             </section>
-          </section>
+          </div>
           <hr class="card-line-size" />
           <ul
             id="list-of-purchases"
@@ -198,7 +211,10 @@
             >
               Paid · Wise · GBP
             </p>
-            <img src="assets/images/icon-barcode.svg" alt="barcode" />
+            <img
+              src="assets/images/icon-barcode.svg"
+              alt="barcode for payment scanning"
+            />
           </div>
         </article>
 
@@ -208,13 +224,13 @@
             id="welcome-card-header"
             class="display-flex justify-content-space-btw"
           >
-            <h1
+            <h2
               id="welcome-card-header-title"
               class="text-transform-uppercase font-dm-mono font-weight-400"
             >
               Welcome card
-            </h1>
-            <img src="assets/images/icon-sun.svg" alt="sun" />
+            </h2>
+            <img src="assets/images/icon-sun.svg" alt="" />
           </header>
 
           <p
@@ -243,19 +259,19 @@
             <p id="room-type" class="font-fraunces">La Garrigue</p>
           </footer>
         </article>
-      </section>
+      </div>
       <p
         id="hover-prompt"
         class="text-transform-uppercase font-dm-mono display-flex"
       >
-        <img src="assets/images/icon-sparkle.svg" alt="red sparkle" />
+        <img src="assets/images/icon-sparkle.svg" alt="" />
         <span id="hover-prompt-text" class="color-neutral-600"
           >Hover to fan</span
         >
-        <img src="assets/images/icon-sparkle.svg" alt="red sparkle" />
+        <img src="assets/images/icon-sparkle.svg" alt="" />
       </p>
 
-      <article id="guest-info" class="display-flex">
+      <div id="guest-info" class="display-flex">
         <article
           class="guest-info-card-size bg-neutral-50 border-1px-solid-neutral-400"
         >
@@ -312,10 +328,7 @@
           <h2 class="guest-info-card-sub-title font-fraunces font-weight-400">
             Le Soleil · Guest
           </h2>
-          <p
-            class="guest-info-card-eyebrow font-dm-sans color-neutral-600"
-            datetime="04-25"
-          >
+          <p class="guest-info-card-eyebrow font-dm-sans color-neutral-600">
             Password below
           </p>
 
@@ -371,14 +384,13 @@
             class="guest-info-card-sub-title font-fraunces font-weight-400"
           >
             Served
-            <time datetime="15:00"
-              >8 <span class="font-dm-sans">-</span> 10:30</time
-            >
+            <time datetime="08:00"> 8 </time>
+            <span class="font-dm-sans">-</span>
+            <time datetime="10:30">10:30</time>
           </h2>
           <p
             id="guest-info-breakfast-card-eyebrow"
             class="guest-info-card-eyebrow font-dm-sans color-neutral-600"
-            datetime="04-25"
           >
             On the terrace
           </p>
@@ -390,7 +402,7 @@
             >
           </p>
         </article>
-      </article>
+      </div>
     </main>
   </body>
 </html>
