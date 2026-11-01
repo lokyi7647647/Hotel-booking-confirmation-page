@@ -1,0 +1,40 @@
+#main-header {
+  column-gap: 32.125rem;
+}
+
+#booking-confirmed {
+  font-size: 0.77rem;
+  letter-spacing: 0.1125rem;
+  color: hsl(33, 17%, 41%);
+}
+
+#booking-person-name {
+  font-size: 2.45rem;
+  margin-top: 0.3125rem;
+  letter-spacing: -0.0125rem;
+}
+
+#button-actions {
+  padding-top: 1.125rem;
+  align-items: start;
+  column-gap: 0.9375rem;
+}
+
+#button-actions > button {
+  border-radius: 1.2rem;
+  font-size: 0.87rem;
+  border: 0.0625rem solid hsl(36, 22%, 86%);
+}
+
+#button-actions > :first-child {
+  background-color: hsl(35, 60%, 96%);
+  padding: 0.5625rem 0.9375rem 0.5625rem 0.875rem;
+  letter-spacing: 0.025rem;
+}
+
+#button-actions > :last-child {
+  background-color: hsl(33, 15%, 15%);
+  padding: 0.5625rem 1rem 0.625rem 1rem;
+  letter-spacing: 0.0375rem;
+  color: hsl(36, 22%, 86%);
+}
